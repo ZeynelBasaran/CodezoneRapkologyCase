@@ -71,7 +71,7 @@ const HeroUnder = () => {
                     src={"/image/person1.png"}
                     width={419}
                     height={437}
-                    alt=""
+                    alt="person logo"
                     className="w-[281px] h-[293px] lg:w-[419px] lg:h-[437px] top-[259px] lg:top-[133px] -left-6 lg:left-[109px]  absolute select-none"
                 />
 
@@ -79,7 +79,7 @@ const HeroUnder = () => {
                     src={"/image/person2.png"}
                     width={303}
                     height={530}
-                    alt=""
+                    alt="person logo 2"
                     className="w-[305px] h-[387px] lg:w-[403px] lg:h-[530px] absolute top-[235px] lg:top-[93px] -right-10 lg:right-[100px] select-none"
                 />
 
@@ -87,7 +87,7 @@ const HeroUnder = () => {
                     src={"/image/HeroUnderVector.png"}
                     width={303}
                     height={530}
-                    alt=""
+                    alt="vector logo"
                     className="max-w-[1797px] h-[484px] w-full absolute -bottom-[260px]  lg:-bottom-[100px] select-none"
                 />
             </div>

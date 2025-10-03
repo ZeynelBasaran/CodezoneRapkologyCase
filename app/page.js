@@ -11,18 +11,9 @@ const Page = () => {
       <HeroUnder />
       <Trendler />
       <Favoriler />
-
       <Kesfet />
     </main>
   );
 };
 
 export default Page;
-
-/*
-
-
-
-        
-     
-*/

@@ -68,9 +68,9 @@ const Kesfet = () => {
                         </div>
 
                         <div className='flex gap-4'>
-                            <Image src="/icon/search.svg" alt="Logo" width={23} height={22} className='w-[23px] h-[22px] ' />
-                            <Image src="/icon/home/burger.svg" alt="Logo" width={24} height={20} className='w-[24px] h-[20px] ' />
-                            <Image src="/icon/home/burger2.svg" alt="Logo" width={23} height={20} className='w-[23px] h-[20px] ' />
+                            <Image src="/icon/search.svg" alt="Logo search" width={23} height={22} className='w-[23px] h-[22px] ' />
+                            <Image src="/icon/home/burger.svg" alt="Logo burger" width={24} height={20} className='w-[24px] h-[20px] ' />
+                            <Image src="/icon/home/burger2.svg" alt="Logo burder icon" width={23} height={20} className='w-[23px] h-[20px] ' />
                         </div>
                     </div>
 
@@ -130,15 +130,15 @@ const Kesfet = () => {
 
 
                     <div className='flex items-center justify-start gap-5 mt-12'>
-                        <Image src="/icon/home/facebook.svg" alt="ArrowLogo" width={40} height={40} className='w-[15px] h-[29px] ml-2' />
+                        <Image src="/icon/home/facebook.svg" alt="facebook logo" width={40} height={40} className='w-[15px] h-[29px] ml-2' />
 
-                        <Image src="/icon/home/twitter.svg" alt="ArrowLogo" width={40} height={40} className='w-[27px] h-[22px] ml-2' />
+                        <Image src="/icon/home/twitter.svg" alt="twitter logo" width={40} height={40} className='w-[27px] h-[22px] ml-2' />
 
-                        <Image src="/icon/home/discord.svg" alt="ArrowLogo" width={40} height={40} className='w-[32px] h-[24px] ml-2' />
+                        <Image src="/icon/home/discord.svg" alt="discord logo" width={40} height={40} className='w-[32px] h-[24px] ml-2' />
 
-                        <Image src="/icon/home/spotify.svg" alt="ArrowLogo" width={40} height={40} className='w-[34px] h-[34px] ml-2' />
+                        <Image src="/icon/home/spotify.svg" alt="spotify logo" width={40} height={40} className='w-[34px] h-[34px] ml-2' />
 
-                        <Image src="/icon/home/youtube.svg" alt="ArrowLogo" width={40} height={40} className='w-[34px] h-[24px] ml-2' />
+                        <Image src="/icon/home/youtube.svg" alt="youtube logo" width={40} height={40} className='w-[34px] h-[24px] ml-2' />
                     </div>
 
                     <div className="grid gap-4 mt-16">
