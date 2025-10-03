@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Codezone Rapkology — Türkçe README
 
-## Getting Started
+Bu repo, Next.js App Router mimarisiyle hazırlanmış bir arayüz projesidir. Tema yönetimi, Tailwind CSS ile stil sistemi ve içerik bölümleri (Hero, Trendler, Favoriler, Keşfet) üzerine kurulu bir sayfa düzeni içerir.
 
-First, run the development server:
+### Teknolojiler
+
+- **Next.js 15 (App Router)**
+- **React 19**
+- **Tailwind CSS 3** (PostCSS ile)
+- **next-themes** (Açık/Koyu tema desteği)
+- **Swiper** (gerekli olduğunda slider/karusel için)
+
+### Proje Yapısı (özet)
+
+```
+app/
+  layout.js        → Global layout, font ve ThemeProvider
+  page.js          → Ana sayfa (Hero, Trendler, Favoriler, Keşfet)
+components/
+  Navbar.jsx
+  home/
+    HeroSection.jsx
+    HeroUnder.jsx
+    Trendler.jsx
+    Favoriler.jsx
+    Kesfet.jsx
+    KesfetButonSelect.jsx
+public/
+  icon/ ...        → SVG ikonlar
+  image/ ...       → Statik görseller
+tailwind.config.js → Ekran kırılımları, renkler, font aileleri
+```
+
+### Özellikler
+
+- **App Router** ile `app/` dizininde sayfa ve yerleşim yönetimi
+- **Global tema**: `components/provider/theme-provider.jsx` üzerinden `next-themes` ile tema geçişi
+- **Özel font**: Google Fonts `Saira Condensed` (`Saira_Condensed`) entegre
+- **Tailwind tema genişletmeleri**: özel renk paleti, ekran kırılımları, harf aralıkları
+- **Bölümlere ayrılmış ana sayfa**: `HeroSection`, `HeroUnder`, `Trendler`, `Favoriler`, `Kesfet`
+
+### Kurulum
+
+1. Bağımlılıkları yükleyin:
+
+```bash
+npm install
+```
+
+2. Geliştirme sunucusunu başlatın:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Tarayıcıdan uygulamayı görüntüleyin: `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Komutlar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Geliştirme**: `npm run dev`
+- **Üretim derlemesi**: `npm run build`
+- **Üretimde çalıştırma**: `npm run start`
+- **Lint**: `npm run lint`
 
-## Learn More
+### Yapılandırma Notları
 
-To learn more about Next.js, take a look at the following resources:
+- Global stiller `app/globals.css` içinde yönetilir.
+- `app/layout.js` dosyasında font değişkeni (`--font-saira`) ve `ThemeProvider` tanımlıdır.
+- Tailwind içerik taraması `app/`, `components/`, `pages/` ve `src/` dizinlerini kapsar.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Varlıklar (Assets)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- SVG ikonlar `public/icon/` altında, görseller `public/image/` altında tutulur.
+- Örnek/mock veriler `public/mockData.js` içinde bulunur.
 
-## Deploy on Vercel
+### Geliştirme Önerileri
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Bileşenleri küçük ve tek sorumluluk prensibine uygun tutun.
+- Stil için Tailwind yardımcı sınıflarını tercih edin; karmaşık stilleri `globals.css` veya modüler stillere taşıyın.
+- Tema geçişlerinde FOUC (Flash of Unstyled Content) yaşamamak için `suppressHydrationWarning` ve `next-themes` ayarlarını koruyun.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Sürüm Bilgileri (kısaca)
+
+- `next@15.4.2`, `react@19.1.0`, `tailwindcss@3.4.17`, `next-themes@0.4.6`
+
+### Lisans
+
+Bu proje için lisans bilgisi belirtilmemiştir. Gerekirse `LICENSE` dosyası ekleyin.
+
+### Katkı
+
+Katkılarınızı memnuniyetle karşılarız. Lütfen bir dal (branch) açıp değişikliklerinizi PR olarak gönderin.
