@@ -3,9 +3,67 @@
 @tailwind utilities;
 
 
-
+/*Flex Ortalama*/
 .center {
   display: flex;
+
   justify-content: center;
   align-items: center;
+}
+
+/*  Absolute Ortalama Sınıfları */
+.absoluteXCenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.absoluteYCenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.absoluteXYCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Özel ----------  Sınıflar*/
+.shadow-custom {
+  box-shadow: 5.55px 5.55px 0px 0px #000000;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 6px;      
+  width: 400px;        
+
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: #000000;   
+
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #F0E74D;   
+  border-radius: 0px;      
+  width: 100px;             
+}
+
+/*ClipPath*/
+.homebtn{
+  clip-path: polygon(0 2%, 100% 0, 93% 100%, 4% 93%);
+
+}
+.kesfetLogo{
+  clip-path: polygon(0 0, 100% 0, 90% 70%, 0% 100%);
+}
+
+
+/*Letter Spacing*/
+.letter-spacing-0 {
+  letter-spacing:0px;
+}
+.letter-spacing-1_5 {
+  letter-spacing: 1.5%;
 }
